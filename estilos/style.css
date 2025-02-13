@@ -1,27 +1,47 @@
 @charset "UTF-8";
 
-*{
+*{ /* conf. global de margin, padding e font */
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
-html, body{
-    height: 100vh;
-    width: 100vw;
+html, body{ /* config. para a pagina toda e o body */
+    height: 100vh; /* para usar 100% da altura da página */
+    width: 100vw; /* para usar 100% da largura da página */
     background-color: black;
-    background: url(../imagens/fundo-madeira.jpg) no-repeat top center/cover fixed;
+    background: url(../imagens/fundo-madeira.jpg) no-repeat top center/cover fixed; /* adicionou uma imagem de fundo, ela não vai repetir, vai ficar no centro e na parte de cima da tela e vai cobrir toda a parte com o "cover" */
 }
 main{
-    height: 100vh;
+    height: 100vh; /* para usar 100% da altura da página */
     position: relative;
 }
 #telefone{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 627px;
-    width: 311px;
+    position: absolute; /* para adicionar algo ao meio da tela */
+    top: 50%; /* para adicionar algo ao meio da tela */
+    left: 50%; /* para adicionar algo ao meio da tela */
+    transform: translate(-50%, -50%); /* para adicionar algo ao meio da tela */
+    height: 627px; /* tamanho da altura da tela */
+    width: 311px; /* tamanho da largura da tela */
     background-color: aqua;
-    background: url('../imagens/frame-iphone.png') no-repeat;
+    background: url('../imagens/frame-iphone.png') no-repeat; /* adicionar a imagemn de um celular na tela */
+}
+#tela{
+    position: relative; /* para adicionar a imagem ao meio da tela do celular*/
+    top: 80px; /* para adicionar a imagem ao meio da tela do celular*/
+    left: 22px; /* para adicionar a imagem ao meio da tela do celular*/
+    width: 269px; /* tamanho da largura da exibição na tela */
+    height: 471px; /* tamanho da altura da exibição na tela */
+}
+section#redes-sociais img{
+    width: 50px; /* tamanho da imagem dos botões redondos */
+    margin: 10px; /* margem nos botões */
+    border-radius: 50%; /* para deixar uma imagem redonda */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.356);
+    box-sizing: border-box; /* para a borda fazer parte da caixa */
+}
+section#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.767); /* para quando o mouse passar encima mostrar uma borda branca */
+    transform: translate(-5px, -5px); /* para fazer uma movimentação para cima e para a esquerda quando passar o mouse encima */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466); /* para adicionar uma borda quando passar o mouse encima */
+    transition: transform .5s, border .5s; /* para ter um delay de 0.5s quando passar o mouse encima */
 }
