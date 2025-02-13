@@ -1,26 +1,26 @@
 @charset "UTF_8";
 
-*{
-    margin: 0px;
-    padding: 0px;
+*{ /* conf. global de margin, padding e font */
+    margin: 0px; /* colocando a margem de todo site em 0 */
+    padding: 0px; /* colocando o padding de todo site em 0 */
     font-family: Arial, Helvetica, sans-serif;
 }
-::-webkit-scrollbar{
-    width: 0px;
-    height: 0px;
+::-webkit-scrollbar{ /* para tirar a barra de rolagem */
+    width: 0px; /* para tirar a barra de rolagem */
+    height: 0px; /* para tirar a barra de rolagem */
 }
 a{
-    display: block;
+    display: block; /* para virar uma boxlevel */
     background-color: darkred;
     color: white;
     padding: 20px;
-    text-align: center;
-    font-weight: bolder;
-    text-decoration: none;
+    text-align: center; /* para texto ficar ao meio */
+    font-weight: bolder; /* para deicar a font em negrito */
+    text-decoration: none; /* para tirar a decoração do link */
 }
 img{
-    width: 100vw;
+    width: 100vw; /* para imagem ocupar 100% da tela */
 }
-a:hover{
+a:hover{ /* para quando passar o mouse encima */
     background-color: red;
 }
